@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1C1624;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  margin-top: 1.5rem;
+  border: none;
+  background-color: #463F50;
+  color: #FFF;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.book .card {
+  background-color: transparent;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rooms h1 {
+  font-size: 35px;
+  color: #FFF;
+}
+
+.rooms {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.card img {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.card:hover img {
+  transform: scale(1.2, 1.2);
+  transition: all .3s ease-in-out;
+}
+
+.book .card:hover img {
+  transform: scale(1, 1);
+  transition: all .3s ease-in-out;
+}
+
+.more {
+  border: 1px solid #614CA0;
+  background-color: transparent;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #614CA0;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  position: relative;
+  top: 2rem;
+}
+
+.card-button {
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #FFFFFF3C;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+}
+
+.card h2 {
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-size: 15px;
+  color: #219e2a;
+}
+
+.card h2 span {
+  margin-right: 0.2rem;
+  color: #FFF;
+  font-weight: bold;
+  padding: .2rem 1rem;
+  border-radius: 50px; 
+}
+
+.good {
+  background-color: #219e2a;
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 55px;
+}
+
+.Excellent {
+  background-color: #063e09;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+
+.Very {
+  background-color: #0a5c0f;
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 55px;
+}
+
+.rating .fa-star {
+  width: 12px;
+  height: 12px;
+  color: rgb(255, 179, 0);
+}
+
+.rating {
+  position: relative;
+  top: -.6rem;
+  margin-bottom: 1rem;
+}
+
+.book-top {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book-img {
+    width: 100vw;
+    height: 400px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Price {
+  font-size: 24px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.Price span {
+  color: #614CA0;
+  margin-right: 0.5rem;
+  font-weight: normal;
+}
+
+.book form input {
+  display: block;
+  background-color: transparent;
+  border-bottom: 1px solid #614CA0 !important;
+  border: none;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  color: #FFF;
+}
+
+.book form {
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+  background-color: #000;
+  padding: 5rem 3rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #f00;
+}
+
+.book form .submit {
+  border: 1px solid #614CA0;
+  background-color: transparent;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #614CA0;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  position: relative;
+  top: 2rem;
+}
+
+.book form label {
+  color: #463F50;
+  text-align: left;
+}
+
+input::placeholder {
+  color: #463F50;
+}
+
+.radio {
+  display: flex;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.form-radio input {
+  width: 100% !important;
+  margin-right: 1rem;
+}
+
+.form-radio {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
 }
