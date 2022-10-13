@@ -2,14 +2,13 @@ import React, {useState} from "react";
 import "./Navbar.css"
 import Logo from "../img/231079790_2311509662314955_1834368032630282179_n.jpg"
 import { Link } from "react-router-dom";
-import Room from "../Data/rooms";
 
 function Home() {
   return (
     <>
         <nav className="navbar navbar-expand-lg ">
             <div className="container-fluid">
-                <div className="nav-top">
+                <div className="nav-top w-25">
                     <div className="icon-nav">
                         <Link className="navbar-brand" to="/">
                             <img src={Logo} />
@@ -18,10 +17,12 @@ function Home() {
                             <i className="fa-solid fa-bars-staggered"></i>
                         </button>
                     </div>
-                    <div className="search">
+                </div>
+                <div className="search-div">
+                    <div className="search w-50">
                         <input type="text" placeholder="Search"/>
                     </div>
-                    <div className="d-contents collapse navbar-collapse " id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-lg-0">
                             <li className="nav-item">
                                 <Link to="/" className="nav-link" >Home</Link>
