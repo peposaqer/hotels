@@ -38,7 +38,7 @@ function Home() {
                                 </Link>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <li><Link class="dropdown-item" to="/Register">Register</Link></li>
-                                    <li><Link class="dropdown-item" to="/Login">Log In</Link></li>
+                                    <li><Link class="dropdown-item" to="/Register">Log In</Link></li>
                                 </ul>
                             </li>
                         </ul>

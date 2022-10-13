@@ -368,7 +368,6 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 3rem;
   z-index: 10000;
   position: relative;
 }
@@ -380,50 +379,68 @@ input::placeholder {
 }
 
 .login-form {
-  background-color: #F0EABE;
-  padding: 2rem;
-  /* width: 60%; */
-  margin: auto;
   text-align: center;
-  border-radius: 12px;
   opacity: 1;
+  width: 60%;
+  margin: auto;
 }
 
 .login-form input {
   display: block;
-  background-color: transparent;
-  border-bottom: 1px solid #3120E0 !important;
-  border: none;
-  margin-bottom: 1.5rem;
   width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 12px;
   color: #FFF;
 }
 
 .login-form input::placeholder {
-  color: #3120E0;
+  color: #FFF;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background-image: url("./Component/img/dsc_2601.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  color: #FFF;
+}
+
+.icons {
+  background-color: #393939;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  color: #f00;
+  font-size: 14px;
 }
 
 .login-form .submit {
-  border: 1px solid #3B9AE1;
-  background-color: transparent;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  color: #3B9AE1;
+  background-color: #0d6efd;
+  color: #FFF;
   padding-top: 0.4rem;
   padding-bottom: 0.6rem;
+  width: 100%;
+  border: 1px solid #0d6efd;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.login {
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  text-align: center;
-  z-index: 1000;
-}
-
-.login img {
+.login-form img {
   width: 150px;
   height: 150px;
   margin-bottom: 2rem;
@@ -485,9 +502,10 @@ input::placeholder {
 
 .background {
   width: 100%;
-  height: 400px;
-  background: no-repeat center center fixed;
-  /* object-fit: contain; */
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .about-div {
@@ -587,3 +605,4 @@ input::placeholder {
   font-size: 32px;
   margin-bottom: 3rem;
 }
+

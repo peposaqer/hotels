@@ -13,9 +13,9 @@ function BookRoom() {
 
     return (
         <div className="container">
-            <div className="book">
+            <div className="book mb-5">
                 <div className="row">
-                    <div className="col-md-12"><h1>{book.title}</h1></div>
+                    <div className="col-md-12"><h1 className="mt-5">{book.title}</h1></div>
                     <div className="col-md-6">
                         <img src={book.src} className="img-book" />
                     </div>
